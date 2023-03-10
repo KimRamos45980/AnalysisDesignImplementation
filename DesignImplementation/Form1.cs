@@ -6,5 +6,12 @@ namespace DesignImplementation
         {
             InitializeComponent();
         }
+
+        private void BtnCreatePerson_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AddPerson addPersonForm = new();
+            addPersonForm.ShowDialog();
+        }
     }
 }
