@@ -103,7 +103,7 @@
             this.dataGridViewPerson.Size = new System.Drawing.Size(816, 424);
             this.dataGridViewPerson.TabIndex = 4;
             this.dataGridViewPerson.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewPerson_CellClick);
-            this.dataGridViewPerson.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewPerson_CellDoubleClick);
+            this.dataGridViewPerson.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewPerson_CellContentDoubleClick);
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -182,7 +182,8 @@
             this.Controls.Add(this.BtnEditPerson);
             this.Controls.Add(this.BtnCreatePerson);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "List";
             ((System.ComponentModel.ISupportInitialize)(this.personBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.personBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.designImplementationContextBindingSource)).EndInit();

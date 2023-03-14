@@ -200,7 +200,8 @@
             this.Controls.Add(this.TxtFirstName);
             this.Controls.Add(this.label1);
             this.Name = "AddPerson";
-            this.Text = "AddPerson";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Add";
             this.ResumeLayout(false);
             this.PerformLayout();
 

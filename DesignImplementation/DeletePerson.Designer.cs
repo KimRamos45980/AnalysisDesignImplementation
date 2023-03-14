@@ -61,7 +61,7 @@
             // 
             this.LbFullName.AutoSize = true;
             this.LbFullName.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LbFullName.Location = new System.Drawing.Point(96, 86);
+            this.LbFullName.Location = new System.Drawing.Point(106, 87);
             this.LbFullName.Name = "LbFullName";
             this.LbFullName.Size = new System.Drawing.Size(86, 25);
             this.LbFullName.TabIndex = 1;
@@ -71,7 +71,7 @@
             // 
             this.LbCity.AutoSize = true;
             this.LbCity.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LbCity.Location = new System.Drawing.Point(96, 158);
+            this.LbCity.Location = new System.Drawing.Point(106, 159);
             this.LbCity.Name = "LbCity";
             this.LbCity.Size = new System.Drawing.Size(42, 25);
             this.LbCity.TabIndex = 4;
@@ -81,7 +81,7 @@
             // 
             this.LbStreetAddress.AutoSize = true;
             this.LbStreetAddress.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LbStreetAddress.Location = new System.Drawing.Point(96, 122);
+            this.LbStreetAddress.Location = new System.Drawing.Point(106, 123);
             this.LbStreetAddress.Name = "LbStreetAddress";
             this.LbStreetAddress.Size = new System.Drawing.Size(77, 25);
             this.LbStreetAddress.TabIndex = 3;
@@ -91,7 +91,7 @@
             // 
             this.LbPhoneNumber.AutoSize = true;
             this.LbPhoneNumber.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LbPhoneNumber.Location = new System.Drawing.Point(96, 266);
+            this.LbPhoneNumber.Location = new System.Drawing.Point(106, 267);
             this.LbPhoneNumber.Name = "LbPhoneNumber";
             this.LbPhoneNumber.Size = new System.Drawing.Size(132, 25);
             this.LbPhoneNumber.TabIndex = 7;
@@ -101,7 +101,7 @@
             // 
             this.LbZipCode.AutoSize = true;
             this.LbZipCode.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LbZipCode.Location = new System.Drawing.Point(96, 230);
+            this.LbZipCode.Location = new System.Drawing.Point(106, 231);
             this.LbZipCode.Name = "LbZipCode";
             this.LbZipCode.Size = new System.Drawing.Size(84, 25);
             this.LbZipCode.TabIndex = 6;
@@ -111,7 +111,7 @@
             // 
             this.LbState.AutoSize = true;
             this.LbState.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LbState.Location = new System.Drawing.Point(96, 194);
+            this.LbState.Location = new System.Drawing.Point(106, 195);
             this.LbState.Name = "LbState";
             this.LbState.Size = new System.Drawing.Size(51, 25);
             this.LbState.TabIndex = 5;
@@ -144,7 +144,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(24, 266);
+            this.label2.Location = new System.Drawing.Point(34, 267);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(66, 25);
             this.label2.TabIndex = 15;
@@ -154,7 +154,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(2, 230);
+            this.label3.Location = new System.Drawing.Point(12, 231);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(88, 25);
             this.label3.TabIndex = 14;
@@ -164,7 +164,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(35, 194);
+            this.label4.Location = new System.Drawing.Point(45, 195);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(55, 25);
             this.label4.TabIndex = 13;
@@ -174,7 +174,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(44, 158);
+            this.label5.Location = new System.Drawing.Point(54, 159);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(46, 25);
             this.label5.TabIndex = 12;
@@ -184,7 +184,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(9, 122);
+            this.label6.Location = new System.Drawing.Point(19, 123);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(81, 25);
             this.label6.TabIndex = 11;
@@ -194,7 +194,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(27, 86);
+            this.label7.Location = new System.Drawing.Point(37, 87);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(63, 25);
             this.label7.TabIndex = 10;
@@ -221,7 +221,8 @@
             this.Controls.Add(this.LbFullName);
             this.Controls.Add(this.label1);
             this.Name = "DeletePerson";
-            this.Text = "DeletePerson";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Delete";
             this.ResumeLayout(false);
             this.PerformLayout();
 
