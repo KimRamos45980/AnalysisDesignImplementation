@@ -76,6 +76,11 @@ namespace DesignImplementation
                 dbContext.SaveChanges();
 
                 MessageBox.Show($"{person.FirstName}, {person.LastName} has been successfully added!");
+                
+                foreach(TextBox tb in this.Controls.OfType<TextBox>())
+                {
+                    tb.Text = string.Empty;
+                }
             }
             else
             {
