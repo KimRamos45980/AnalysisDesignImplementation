@@ -48,10 +48,17 @@ namespace DesignImplementation
 
         private void BtnEditPerson_Click(Object sender, EventArgs e)
         {
-            this.Hide();
-            EditPerson editForm = new();
-            EditPerson.info = personInfo;
-            editForm.ShowDialog();
+            if (personInfo.Id == 0)
+            {
+                MessageBox.Show("Please select a person to edit");
+            }
+            else
+            {
+                this.Hide();
+                EditPerson editForm = new();
+                EditPerson.info = personInfo;
+                editForm.ShowDialog();
+            }
         }
 
         private void dataGridViewPerson_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -77,6 +84,12 @@ namespace DesignImplementation
                     personInfo.PhoneNumber = person.PhoneNumber;
                 }
             }
+        }
+
+        private void dataGridViewPerson_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            dataGridViewPerson_CellClick(sender, e);
+            BtnEditPerson_Click(sender, e);
         }
     }
 }

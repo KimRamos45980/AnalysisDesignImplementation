@@ -103,6 +103,7 @@
             this.dataGridViewPerson.Size = new System.Drawing.Size(816, 424);
             this.dataGridViewPerson.TabIndex = 4;
             this.dataGridViewPerson.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewPerson_CellClick);
+            this.dataGridViewPerson.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewPerson_CellDoubleClick);
             // 
             // idDataGridViewTextBoxColumn
             // 
