@@ -86,17 +86,11 @@ namespace DesignImplementation
             }
         }
 
-        private void dataGridViewPerson_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            dataGridViewPerson_CellClick(sender, e);
-            BtnEditPerson_Click(sender, e);
-        }
-
         private void BtnDeletePerson_Click(object sender, EventArgs e)
         {
             if (personInfo.Id == 0)
             {
-                MessageBox.Show("Please select a person to Delete");
+                MessageBox.Show("Please select a person to delete");
             }
             else
             {
@@ -105,6 +99,12 @@ namespace DesignImplementation
                 DeletePerson.delete = personInfo;
                 deleteForm.ShowDialog();
             }
+        }
+
+        private void dataGridViewPerson_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            dataGridViewPerson_CellClick(sender, e);
+            BtnEditPerson_Click(sender, e);
         }
     }
 }
