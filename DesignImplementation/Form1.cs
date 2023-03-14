@@ -91,5 +91,20 @@ namespace DesignImplementation
             dataGridViewPerson_CellClick(sender, e);
             BtnEditPerson_Click(sender, e);
         }
+
+        private void BtnDeletePerson_Click(object sender, EventArgs e)
+        {
+            if (personInfo.Id == 0)
+            {
+                MessageBox.Show("Please select a person to Delete");
+            }
+            else
+            {
+                this.Hide();
+                DeletePerson deleteForm = new();
+                DeletePerson.delete = personInfo;
+                deleteForm.ShowDialog();
+            }
+        }
     }
 }

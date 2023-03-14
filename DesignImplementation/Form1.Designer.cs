@@ -170,6 +170,7 @@
             this.BtnDeletePerson.TabIndex = 3;
             this.BtnDeletePerson.Text = "Delete Person";
             this.BtnDeletePerson.UseVisualStyleBackColor = true;
+            this.BtnDeletePerson.Click += new System.EventHandler(this.BtnDeletePerson_Click);
             // 
             // Form1
             // 
