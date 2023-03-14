@@ -44,24 +44,35 @@ namespace DesignImplementation
             addPersonForm.ShowDialog();
         }
 
-        public static Person person = new Person();
+        public static Person personInfo = new Person();
 
         private void BtnEditPerson_Click(Object sender, EventArgs e)
         {
-
+            EditPerson editForm = new();
+            EditPerson.info = personInfo;
+            editForm.ShowDialog();
         }
 
         private void dataGridViewPerson_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            //int row = dataGridViewPerson.CurrentRow.Index;
-            //person.Id = int.Parse(dataGridViewPerson[0, row].Value.ToString());
-            //person.FirstName = dataGridViewPerson[1, row].Value.ToString();
-            //person.LastName = dataGridViewPerson[2, row].Value.ToString();
-            //person.StreetAddress = dataGridViewPerson[3, row].Value.ToString();
-            //person.City = dataGridViewPerson[4, row].Value.ToString();
-            //person.State = dataGridViewPerson[5, row].Value.ToString();
-            //person.ZipCode = dataGridViewPerson[6, row].Value.ToString();
-            //person.PhoneNumber = dataGridViewPerson[7, row].Value.ToString();
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dataGridViewPerson.Rows[e.RowIndex];
+                int selectedPerson = int.Parse(row.Cells[0].Value.ToString());
+
+                Person ? person = (from c in DbContext.Person
+                                   where c.Id == selectedPerson
+                                   select c).FirstOrDefault();
+
+                personInfo.Id = person.Id;
+                personInfo.FirstName = person.FirstName;
+                personInfo.LastName = person.LastName;
+                personInfo.StreetAddress = person.StreetAddress;
+                personInfo.City = person.City;
+                personInfo.State = person.State;
+                personInfo.ZipCode = person.ZipCode;
+                personInfo.PhoneNumber = person.PhoneNumber;
+            }
         }
     }
 }
