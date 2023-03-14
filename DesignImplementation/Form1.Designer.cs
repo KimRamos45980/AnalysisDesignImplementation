@@ -44,7 +44,6 @@
             this.zipCodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phoneNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BtnDeletePerson = new System.Windows.Forms.Button();
-            this.BtnSortList = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.personBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.designImplementationContextBindingSource)).BeginInit();
@@ -67,7 +66,7 @@
             this.BtnEditPerson.Name = "BtnEditPerson";
             this.BtnEditPerson.Size = new System.Drawing.Size(126, 50);
             this.BtnEditPerson.TabIndex = 2;
-            this.BtnEditPerson.Text = "Save Changes";
+            this.BtnEditPerson.Text = "Edit Person";
             this.BtnEditPerson.UseVisualStyleBackColor = true;
             this.BtnEditPerson.Click += new System.EventHandler(this.BtnEditPerson_Click);
             // 
@@ -171,15 +170,6 @@
             this.BtnDeletePerson.Text = "Delete Person";
             this.BtnDeletePerson.UseVisualStyleBackColor = true;
             // 
-            // BtnSortList
-            // 
-            this.BtnSortList.Location = new System.Drawing.Point(408, 12);
-            this.BtnSortList.Name = "BtnSortList";
-            this.BtnSortList.Size = new System.Drawing.Size(126, 50);
-            this.BtnSortList.TabIndex = 1;
-            this.BtnSortList.Text = "Sort List";
-            this.BtnSortList.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -188,7 +178,6 @@
             this.Controls.Add(this.dataGridViewPerson);
             this.Controls.Add(this.BtnDeletePerson);
             this.Controls.Add(this.BtnEditPerson);
-            this.Controls.Add(this.BtnSortList);
             this.Controls.Add(this.BtnCreatePerson);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -209,7 +198,6 @@
         private BindingSource designImplementationContextBindingSource;
         private DataGridView dataGridViewPerson;
         private Button BtnDeletePerson;
-        private Button BtnSortList;
         private DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn firstNameDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn lastNameDataGridViewTextBoxColumn;

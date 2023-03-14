@@ -48,6 +48,7 @@ namespace DesignImplementation
 
         private void BtnEditPerson_Click(Object sender, EventArgs e)
         {
+            this.Hide();
             EditPerson editForm = new();
             EditPerson.info = personInfo;
             editForm.ShowDialog();
@@ -64,14 +65,17 @@ namespace DesignImplementation
                                    where c.Id == selectedPerson
                                    select c).FirstOrDefault();
 
-                personInfo.Id = person.Id;
-                personInfo.FirstName = person.FirstName;
-                personInfo.LastName = person.LastName;
-                personInfo.StreetAddress = person.StreetAddress;
-                personInfo.City = person.City;
-                personInfo.State = person.State;
-                personInfo.ZipCode = person.ZipCode;
-                personInfo.PhoneNumber = person.PhoneNumber;
+                if (person != null)
+                {
+                    personInfo.Id = person.Id;
+                    personInfo.FirstName = person.FirstName;
+                    personInfo.LastName = person.LastName;
+                    personInfo.StreetAddress = person.StreetAddress;
+                    personInfo.City = person.City;
+                    personInfo.State = person.State;
+                    personInfo.ZipCode = person.ZipCode;
+                    personInfo.PhoneNumber = person.PhoneNumber;
+                }
             }
         }
     }
