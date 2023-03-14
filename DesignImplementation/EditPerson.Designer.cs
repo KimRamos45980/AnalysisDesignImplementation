@@ -54,6 +54,7 @@
             this.BtnBack.TabIndex = 31;
             this.BtnBack.Text = "Back";
             this.BtnBack.UseVisualStyleBackColor = true;
+            this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
             // 
             // BtnEditPerson
             // 
@@ -63,6 +64,7 @@
             this.BtnEditPerson.TabIndex = 30;
             this.BtnEditPerson.Text = "Save Changes";
             this.BtnEditPerson.UseVisualStyleBackColor = true;
+            this.BtnEditPerson.Click += new System.EventHandler(this.BtnEditPerson_Click);
             // 
             // TxtPhoneNumber
             // 
