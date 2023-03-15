@@ -56,7 +56,7 @@
             this.BtnCreatePerson.Name = "BtnCreatePerson";
             this.BtnCreatePerson.Size = new System.Drawing.Size(126, 50);
             this.BtnCreatePerson.TabIndex = 0;
-            this.BtnCreatePerson.Text = "Add New Person";
+            this.BtnCreatePerson.Text = "Add";
             this.BtnCreatePerson.UseVisualStyleBackColor = true;
             this.BtnCreatePerson.Click += new System.EventHandler(this.BtnCreatePerson_Click);
             // 
@@ -66,7 +66,7 @@
             this.BtnEditPerson.Name = "BtnEditPerson";
             this.BtnEditPerson.Size = new System.Drawing.Size(126, 50);
             this.BtnEditPerson.TabIndex = 2;
-            this.BtnEditPerson.Text = "Edit Person";
+            this.BtnEditPerson.Text = "Edit";
             this.BtnEditPerson.UseVisualStyleBackColor = true;
             this.BtnEditPerson.Click += new System.EventHandler(this.BtnEditPerson_Click);
             // 
@@ -168,7 +168,7 @@
             this.BtnDeletePerson.Name = "BtnDeletePerson";
             this.BtnDeletePerson.Size = new System.Drawing.Size(126, 50);
             this.BtnDeletePerson.TabIndex = 3;
-            this.BtnDeletePerson.Text = "Delete Person";
+            this.BtnDeletePerson.Text = "Delete";
             this.BtnDeletePerson.UseVisualStyleBackColor = true;
             this.BtnDeletePerson.Click += new System.EventHandler(this.BtnDeletePerson_Click);
             // 
